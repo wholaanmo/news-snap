@@ -1,0 +1,43 @@
+<template>
+  <div class="app">
+    <router-view />
+  </div>
+</template>
+
+<script setup>
+// No need for layout logic here anymore - it's handled by individual layouts
+</script>
+
+<style lang="css">
+:root {
+  --primary: #000000;
+  --grey: #5a0000;
+  --dark: #0F0E0E;
+  --dark-alt: #37353E;
+  --light: #e4e3df;
+  --sidebar-width: 230px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light);
+  overflow-x: hidden; 
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.app {
+  min-height: 100vh;
+}
+</style>
